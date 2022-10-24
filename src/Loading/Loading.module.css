@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+}
+
+.container span {
+  color: #ce0000;
+}
+
+.center {
+  width: 100%;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 8vh;
+  width: fit-content;
+  overflow: hidden;
+  animation: animation-name 2s infinite;
+}
+
+.ellipse {
+  position: relative;
+  margin: 0 20px;
+  animation: float 1.5s infinite;
+}
+
+.ellipse:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.ellipse:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: -2vh;
+  }
+  100% {
+    top: 0%;
+  }
+}

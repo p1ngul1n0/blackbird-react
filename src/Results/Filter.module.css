@@ -1,0 +1,48 @@
+.filter {
+  margin: 8% 2% 1% 1%;
+}
+
+.filter p {
+  color: #999999;
+}
+
+.filter span {
+  color: #ce0000;
+}
+
+.filter label {
+  color: #656565;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.filter input {
+  background-color: #f3f4f5;
+  border: none;
+  margin-right: 30px;
+  height: 20px;
+}
+
+.filter button {
+  border: none;
+  padding: 5px 30px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buttonFilter {
+  margin-right: 10px;
+}
+
+.buttonExport {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  color: #fdfdfd;
+  background-color: #0b0b0b;
+  padding: 10px;
+  height: 50%;
+  width: 10%;
+  border-radius: 5px;
+}
