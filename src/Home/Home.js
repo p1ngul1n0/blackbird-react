@@ -30,7 +30,11 @@ function Home() {
             onKeyPress={(e) => (e.key === "Enter" ? handleSubmit() : null)}
             placeholder="Type a username"
           />
-          <button disabled={username ? false : true} onClick={handleSubmit}>
+          <button
+            disabled={username ? false : true}
+            style={{ pointerEvents: username ? "auto" : "none" }}
+            onClick={handleSubmit}
+          >
             {">"}
           </button>
         </div>
