@@ -1,4 +1,4 @@
-// local path
+// Base API path
 export let basePath;
 
 if (window.location.hostname == "blackbird-osint.herokuapp.com") {
