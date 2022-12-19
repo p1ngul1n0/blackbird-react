@@ -39,3 +39,24 @@
 .center div > button:disabled {
   background-color: #999999;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfdfd;
+}
+
+.footer div {
+  width: 25%;
+  padding: 0;
+}
+
+.borderRight {
+  border-right: solid 2px #e3e3e3;
+}

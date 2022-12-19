@@ -66,10 +66,15 @@ function Filter({ data, setFilteredResults, setError }) {
           {data["search-params"]["execution-time"]} seconds
         </h1>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <p>
-            Results saved to '
-            {<span>{data["search-params"]["username"]}.json</span>}'
-          </p>
+          {window.location.hostname == "blackbird-osint.herokuapp.com" ? (
+            <></>
+          ) : (
+            <p>
+              Results saved to '
+              {<span>{data["search-params"]["username"]}.json</span>}'
+            </p>
+          )}
+
           <button
             className={styles.buttonExport}
             onClick={() => setExportModalVisible(true)}
