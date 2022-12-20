@@ -4,7 +4,7 @@ import styles from "./Filter.module.css";
 
 function Filter({ data, setFilteredResults, setError }) {
   const [searchParam, setSearchParam] = React.useState("");
-  const [statusFilter, setStatusFilter] = React.useState(null);
+  const [statusFilter, setStatusFilter] = React.useState("FOUND");
   const [ExportModalIsVisible, setExportModalVisible] = React.useState(false);
 
   const foundSites = data["sites"].filter((obj) => obj.status === "FOUND");

@@ -1,5 +1,5 @@
 .filter {
-  margin: 8% 2% 1% 1%;
+  margin: 5% 2% 1% 1%;
 }
 
 .filter p {
@@ -38,11 +38,10 @@
 .buttonExport {
   justify-content: center;
   text-align: center;
-  margin: auto;
+  margin: right;
+  padding: 5px;
+  margin: 5px;
   color: #fdfdfd;
   background-color: #0b0b0b;
-  padding: 10px;
-  height: 50%;
-  width: 10%;
   border-radius: 5px;
 }
