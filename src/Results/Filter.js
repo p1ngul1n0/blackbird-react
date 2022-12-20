@@ -1,5 +1,6 @@
 import React from "react";
 import ExportModal from "../Report/ExportModal";
+import { cloudDomain } from "../Config/api";
 import styles from "./Filter.module.css";
 
 function Filter({ data, setFilteredResults, setError }) {
@@ -66,8 +67,8 @@ function Filter({ data, setFilteredResults, setError }) {
           {data["search-params"]["execution-time"]} seconds
         </h1>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          {window.location.hostname == "blackbird-osint.herokuapp.com" ? (
-            <></>
+          {window.location.hostname == cloudDomain ? (
+            <div></div>
           ) : (
             <p>
               Results saved to '

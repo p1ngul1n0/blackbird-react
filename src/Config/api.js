@@ -1,8 +1,9 @@
 // Base API path
 export let basePath;
-
-if (window.location.hostname == "blackbird-osint.herokuapp.com") {
-  basePath = "https://blackbird-osint.herokuapp.com/";
+export let cloudDomain;
+cloudDomain = "blackbird-osint.herokuapp.com";
+if (window.location.hostname == cloudDomain) {
+  basePath = "https://" + cloudDomain + "/";
 } else {
   basePath = "http://127.0.0.1:9797/";
 }
