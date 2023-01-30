@@ -3,9 +3,11 @@ import Home from "./Home/Home";
 import Loading from "./Loading/Loading";
 import Results from "./Results/Results";
 import "./App.css";
-import ReportPDF from "./Report/ReportPDF";
+import ReactGA from "react-ga";
 
 function App() {
+  const TRACKING_ID = "G-3CJMN759VR";
+  ReactGA.initialize(TRACKING_ID);
   return (
     <div className="App">
       <HashRouter>

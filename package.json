@@ -14,8 +14,9 @@
     "process": "^0.11.10",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-ga": "^3.3.1",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "stream-browserify": "^3.0.0",
     "util": "^0.12.4",
     "web-vitals": "^2.1.4"
