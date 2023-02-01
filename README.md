@@ -18,3 +18,18 @@ npm i react-scripts@4.0.3
 ```
 npm start
 ```
+
+#### Test
+To test the React JS FrontEnd along with Blackbird tool, follow the steps below:
+
+1. Build code
+```
+npm run build
+```
+
+2. Copy "build" folder content to "templates" folder in blackbird tool
+
+3. Start blackbird WebServer
+```
+python blackbird.py --web
+```
