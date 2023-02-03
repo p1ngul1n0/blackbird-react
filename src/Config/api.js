@@ -2,5 +2,8 @@
 export let basePath;
 export let cloudDomain;
 cloudDomain = "blackbird-osint.herokuapp.com";
-basePath = window.location.protocol + "//" +
-           window.location.host + "/";
+if (window.location.hostname == cloudDomain) {
+    basePath = "https://" + cloudDomain + "/";
+} else {
+    basePath = window.location.protocol + "//" + window.location.host + "/";
+}
