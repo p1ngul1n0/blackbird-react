@@ -40,12 +40,29 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 10,
   },
+  smallTextCover: {
+    fontSize: 10,
+    color: "#9E1221",
+  },
+  mediumTextBoldCover: {
+    marginLeft: 2,
+    marginTop: 2,
+    marginBottom: 2,
+    fontWeight: "bold",
+    fontSize: 10,
+  },
   mediumTextBold: {
     marginLeft: 2,
     marginTop: 2,
     marginBottom: 2,
     fontWeight: "bold",
     fontSize: 15,
+  },
+  mediumTextCover: {
+    marginLeft: 2,
+    marginTop: 2,
+    marginBottom: 2,
+    fontSize: 10,
   },
   mediumText: {
     marginLeft: 2,
@@ -68,9 +85,9 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
     backgroundColor: "#F3F4F5",
     width: "100%",
-    height: "15%",
+    height: "10%",
     padding: 10,
-    margin: 25,
+    margin: 10,
   },
   header: {
     display: "flex",
@@ -147,6 +164,12 @@ export const styles = StyleSheet.create({
     backgroundColor: "#58F43E",
     padding: 3,
     borderRadius: 5,
+  },
+  linkCover: {
+    fontSize: 10,
+    marginLeft: 5,
+    color: "#9E1221",
+    textDecoration: "underline",
   },
   link: {
     marginLeft: 5,

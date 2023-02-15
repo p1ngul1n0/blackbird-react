@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "./Styles";
-import { Page, Text, View, Image } from "@react-pdf/renderer";
+import { Page, Text, Link, View, Image } from "@react-pdf/renderer";
 
 function Cover({ dateLong, searchParams }) {
   return (
@@ -17,6 +17,9 @@ function Cover({ dateLong, searchParams }) {
           />
           <Text style={styles.title}>BLACKBIRD</Text>
           <Text style={styles.smallText}>Made with ❤️ by @p1ngul1n0</Text>
+          <Link style={styles.linkCover} src="https://p1ngul1n0.com">
+            p1ngul1n0.com
+          </Link>
         </View>
         <View style={styles.usernameInfo}>
           <Text style={styles.smallTextBold}>Verified username</Text>
@@ -33,14 +36,18 @@ function Cover({ dateLong, searchParams }) {
           </View>
         </View>
         <View style={styles.details}>
-          <Text style={styles.mediumTextBold}>Date</Text>
-          <Text style={styles.mediumTextBold}>Execution Time</Text>
-          <Text style={styles.mediumTextBold}>Nº of sites </Text>
-          <Text style={styles.mediumText}>{dateLong}</Text>
-          <Text style={styles.mediumText}>
-            {searchParams["execution-time"]} seconds
-          </Text>
-          <Text style={styles.mediumText}>{searchParams["sites-number"]}</Text>
+          <View style={{ marginRight: "25" }}>
+            <Text style={styles.smallTextCover}>Date</Text>
+            <Text style={styles.smallTextCover}>Execution Time</Text>
+            <Text style={styles.smallTextCover}>Nº of sites </Text>
+          </View>
+          <View>
+            <Text style={styles.smallText}>{dateLong}</Text>
+            <Text style={styles.smallText}>
+              {searchParams["execution-time"]} seconds
+            </Text>
+            <Text style={styles.smallText}>{searchParams["sites-number"]}</Text>
+          </View>
         </View>
       </View>
     </Page>

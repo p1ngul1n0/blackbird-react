@@ -10,11 +10,17 @@ function ReportPDF({ foundSites, searchParams }) {
     " " +
     date.getDate() +
     ", " +
-    date.getFullYear();
+    date.getFullYear() +
+    " " +
+    date.getHours() +
+    ":" +
+    date.getMinutes() +
+    ":" +
+    date.getSeconds();
 
   Font.registerEmojiSource({
     format: "png",
-    url: "https://twemoji.maxcdn.com/2/72x72/",
+    url: "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/",
   });
 
   return (
