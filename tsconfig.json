@@ -19,6 +19,6 @@
     "isolatedModules": true,
     "incremental": true
   },
-  "include": ["vite-env.d.ts", "**/*.ts", "**/*.tsx", "src/Home/Home.jsx"],
-  "exclude": ["node_modules"]
+  "include": ["vite-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
 }
