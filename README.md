@@ -3,20 +3,29 @@ This repo contains the FrontEnd React Source code for [Blackbird](https://github
 
 ## Setup
 
-#### Clone repository
+### Clone repository
 ```
 git clone https://github.com/p1ngul1n0/blackbird-react
 ```
-
-#### Install React-Scripts
-Install `react-scripts@4.0.3` so Polyfills error doesn't happens with `react-pdf` as said in https://github.com/facebook/create-react-app/issues/11756
+### Create and add the following to .env.local
 ```
-npm i react-scripts@4.0.3
+cd blackbird-react
+touch .env.local
+```
+REACT_APP_API_BASE=
+
+
+### Install React-Scripts
+#### requirenments:
+#### node version: >=20
+#### pnpm version: >=8
+```
+pnpm install
 ```
 
 #### Start the project
 ```
-npm start
+pnpm start
 ```
 
 #### Test
@@ -24,10 +33,10 @@ To test the React JS FrontEnd along with Blackbird tool, follow the steps below:
 
 1. Build code
 ```
-npm run build
+pnpm run build
 ```
 
-2. Copy "build" folder content to "templates" folder in blackbird tool
+2. Copy "dist" folder content to "templates" folder in blackbird tool
 
 3. Start blackbird WebServer
 ```
