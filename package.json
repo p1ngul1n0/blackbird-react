@@ -7,13 +7,24 @@
     "node": ">=20",
     "pnpm": ">=8"
   },
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
     "@react-pdf/renderer": "^3.3.8",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "@vitejs/plugin-react": "^4.2.1",
     "assert": "^2.0.0",
+    "axios": "^1.6.7",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
     "class-variance-authority": "^0.7.0",
@@ -29,18 +40,8 @@
     "util": "^0.12.4",
     "vite": "^5.1.5",
     "vite-tsconfig-paths": "^4.3.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.5.2"
   },
   "browserslist": {
     "production": [
