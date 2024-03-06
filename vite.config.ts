@@ -5,7 +5,7 @@ import path from "path";
 
 export default defineConfig({
   // depending on your application, base can also be "/"
-  base: ".",
+  base: "./",
   plugins: [react(), viteTsconfigPaths()],
   resolve: {
     alias: {
